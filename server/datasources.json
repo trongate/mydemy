@@ -1,0 +1,12 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "mongodb://localhost:27017/mydemy",
+    "database": "mydemy",
+    "password": "",
+    "name": "mongodb",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
