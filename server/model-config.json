@@ -34,5 +34,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Section": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Lesson": {
+    "dataSource": "db",
+    "public": true
   }
 }
