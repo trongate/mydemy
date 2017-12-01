@@ -24,7 +24,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "lessons": {
+      "type": "hasMany",
+      "model": "Lesson",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
