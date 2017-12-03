@@ -14,5 +14,12 @@
     "connector": "loopback-component-storage",
     "provider": "filesystem",
     "root": "./server/local-storage"
+  },
+  "amazonS3": {
+    "name": "amazonS3",
+    "connector": "loopback-component-storage",
+    "provider": "amazon",
+    "key": "ENTER-YOUR-AWS-KEY-HERE",
+    "keyId": "ENTER-YOUR-AWS-KEY-ID-HERE"
   }
 }
