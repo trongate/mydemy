@@ -25,5 +25,31 @@
     }
   },
   "acls": [],
-  "methods": {}
+  "methods": {
+    "sayMyName": {
+      "accepts": [
+        {
+          "arg": "myName",
+          "type": "string",
+          "required": true,
+          "description": "chuck in the name of the person"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "myResponse",
+          "type": "object",
+          "root": false,
+          "description": "this is the response to the say my name thing"
+        }
+      ],
+      "description": "takes in a name and then says it",
+      "http": [
+        {
+          "path": "/say-my-name/:myName",
+          "verb": "get"
+        }
+      ]
+    }
+  }
 }
