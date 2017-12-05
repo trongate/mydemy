@@ -33,6 +33,13 @@
   "session": {},
   "auth": {},
   "parse": {},
+  "routes:before": {
+    "./middleware/counter": {
+      "paths": [
+        "${restApiRoot}"
+      ]
+    }
+  },
   "routes": {
     "loopback#rest": {
       "paths": [
