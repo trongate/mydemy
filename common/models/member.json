@@ -37,7 +37,7 @@
       ],
       "returns": [
         {
-          "arg": "myResponse",
+          "arg": "firstName",
           "type": "object",
           "root": false,
           "description": "this is the response to the say my name thing"

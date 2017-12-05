@@ -2,9 +2,13 @@
 
 module.exports = function(Member) {
 
-    Member.sayMyName = function(myName, callback) {
-      var myResponse = 'Your name is ' + myName;
-      callback(null, myResponse);
+    Member.sayMyName = function(firstName, callback) {
+      callback(null, firstName);
     };
+
+    Member.beforeRemote('sayMyName', function(context, unused, next) {
+        console.log('Putting in the car key, starting the engine.');
+        next();
+    });
 
 };
