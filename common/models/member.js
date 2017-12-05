@@ -11,4 +11,9 @@ module.exports = function(Member) {
         next();
     });
 
+    Member.afterRemote('sayMyName', function(context, finalOutput, next) {
+        console.log('This is the after remote hook running.');
+        next();
+    });
+
 };
