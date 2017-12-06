@@ -6,14 +6,15 @@ module.exports = function(Member) {
       callback(null, firstName);
     };
 
-    //simple example of a before remote hook
     Member.beforeRemote('sayMyName', function(context, unused, next) {
-        console.log('Putting in the car key, starting the engine.');
+        var firstName = context.args.firstName;
+        console.log('your first name is: ' + firstName);
         next();
     });
 
-    //simple example of an after remote hook
-    Member.afterRemote('sayMyName', function(context, finalOutput, next) {
+    Member.afterRemote('sayMyName', function(context, unused, next) {
+        context.result.firstName = 'Sally';
+        context.result.lastName = 'Smith';
         console.log('This is the after remote hook running.');
         next();
     });

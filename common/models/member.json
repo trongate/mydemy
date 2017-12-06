@@ -29,7 +29,7 @@
     "sayMyName": {
       "accepts": [
         {
-          "arg": "myName",
+          "arg": "firstName",
           "type": "string",
           "required": true,
           "description": "chuck in the name of the person"
