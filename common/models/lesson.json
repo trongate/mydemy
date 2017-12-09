@@ -26,6 +26,11 @@
       "type": "belongsTo",
       "model": "Section",
       "foreignKey": ""
+    },
+    "comments": {
+      "type": "hasMany",
+      "model": "Comment",
+      "foreignKey": ""
     }
   },
   "acls": [],
