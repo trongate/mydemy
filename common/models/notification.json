@@ -6,6 +6,9 @@
     "validateUpsert": true
   },
   "properties": {
+    "username": {
+      "type": "string"
+    },
     "date": {
       "type": "date",
       "defaultFn": "now"

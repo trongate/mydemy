@@ -6,6 +6,9 @@
     "validateUpsert": true
   },
   "properties": {
+    "username": {
+      "type": "string"
+    },
     "ref": {
       "type": "string",
       "required": true
